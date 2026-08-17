@@ -1,0 +1,377 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f4f7fb;
+
+    color: #1f2937;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.main-header {
+    background:
+        linear-gradient(
+            135deg,
+            #0f766e,
+            #2563eb
+        );
+
+    color: white;
+
+    padding: 60px 0;
+
+    text-align: center;
+}
+
+.main-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.card-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
+
+    gap: 25px;
+}
+
+.card {
+    background: white;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    margin: 25px 0;
+
+    box-shadow:
+        0 4px 15px
+        rgba(0, 0, 0, 0.08);
+}
+
+.card h2,
+.card h3 {
+    color: #1d4ed8;
+}
+
+.button {
+    display: inline-block;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #2563eb;
+
+    color: white;
+
+    padding: 11px 18px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+
+    font-size: 14px;
+
+    margin: 5px 3px;
+}
+
+.button:hover {
+    background: #1d4ed8;
+}
+
+.button.secondary {
+    background: #64748b;
+}
+
+.button.secondary:hover {
+    background: #475569;
+}
+
+.button.danger {
+    background: #dc2626;
+}
+
+.button.danger:hover {
+    background: #b91c1c;
+}
+
+.button.small {
+    padding: 7px 12px;
+    font-size: 12px;
+}
+
+.success-button {
+    background: #16a34a;
+}
+
+.success-button:hover {
+    background: #15803d;
+}
+
+.external-links {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.external-links a {
+    background: #e0f2fe;
+
+    padding: 12px 18px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: #0369a1;
+}
+
+footer {
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 50px;
+}
+
+footer a {
+    color: #93c5fd;
+}
+
+.navbar {
+    background: #1e3a8a;
+
+    color: white;
+
+    padding: 18px 5%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+}
+
+.auth-container {
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px;
+}
+
+.auth-card {
+    background: white;
+
+    width: 100%;
+
+    max-width: 550px;
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 5px 25px
+        rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+
+    margin-top: 15px;
+
+    margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 11px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 2px
+        rgba(37, 99, 235, 0.15);
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+    background: white;
+}
+
+th {
+    background: #1e3a8a;
+
+    color: white;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+
+    border-bottom:
+        1px solid #e5e7eb;
+}
+
+tr:hover {
+    background: #f8fafc;
+}
+
+.alert {
+    padding: 14px;
+
+    border-radius: 7px;
+
+    margin: 15px 0;
+}
+
+.alert.success {
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+.alert.error {
+    background: #fee2e2;
+
+    color: #991b1b;
+}
+
+.alert.warning {
+    background: #fef3c7;
+
+    color: #92400e;
+}
+
+.warning-text {
+    background: #fef3c7;
+
+    padding: 12px;
+
+    border-radius: 6px;
+
+    color: #92400e;
+}
+
+.badge {
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: #e2e8f0;
+
+    font-size: 12px;
+}
+
+.success-badge {
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+.warning-badge {
+    background: #fef3c7;
+
+    color: #92400e;
+}
+
+.information {
+    margin-top: 50px;
+
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    table {
+        display: block;
+
+        overflow-x: auto;
+    }
+
+    .main-header h1 {
+        font-size: 30px;
+    }
+}
